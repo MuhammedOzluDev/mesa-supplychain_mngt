@@ -1,10 +1,7 @@
 # 🏭 Supply Chain Inventory Simulation
 ### Agent-Based Model with Mesa — Foundation for LLM Agentic Workflow
 
-## 📌 Overview
-
 This project implements a **supply chain inventory simulation** using **Agent-Based Modeling (ABM)** with the [Mesa](https://mesa.readthedocs.io/) library.
-
 
 ## 🤖 Agents
 
@@ -14,8 +11,6 @@ This project implements a **supply chain inventory simulation** using **Agent-Ba
 | `RetailerAgent` | Manages inventory using **(s, S)** reorder-point policy |
 | `SupplierAgent` | Fills orders subject to daily capacity constraints |
 
----
-
 ## 📊 What it simulates
 
 - **90-day** inventory dynamics
@@ -23,23 +18,6 @@ This project implements a **supply chain inventory simulation** using **Agent-Ba
 - **Lead time delays** — supplier delivers after `n` days
 - **KPI tracking** — inventory level, backlog, holding cost, backlog cost, service level
 - **Scenario comparison** — Baseline vs. Supply Disruption (longer lead time) vs. Capacity Shock
-
----
-
-## 🚀 Quick Start
-
-### Option 1 — Google Colab (recommended)
-Click the badge above, or open `supply_chain_simulation.ipynb` directly in Colab. Run cells top to bottom.
-
-### Option 2 — Local
-```bash
-git clone https://github.com/MuhammedOzluDev/mesa-supply-chain-simulation.git
-cd mesa-supply-chain-simulation
-pip install -r requirements.txt
-python run_simulation.py
-```
-
----
 
 ## 📁 Project Structure
 
@@ -52,9 +30,6 @@ mesa-supply-chain-simulation/
 ├── requirements.txt
 ├── outputs/                       # Charts and CSV saved here
 └── README.md
-```
-
----
 
 ## 📈 Sample Output
 
@@ -65,8 +40,6 @@ mesa-supply-chain-simulation/
 | Avg Daily Inventory | ~72 units |
 | Service Level | ~94% |
 | Days with Stockout | ~5 days |
-
----
 
 ## 🔮 Next Step — LLM Agent Integration
 
@@ -91,10 +64,6 @@ This enables:
 - 🧠 **Contextual reasoning** under disruption scenarios
 - 📋 **Explainable** inventory decisions
 - 🔗 **RAG integration** for real-time market data
-
----
-
-## 👤 Author
 
 **Muhammed Özlü** — Management Information Systems, İzmir Bakırçay University  
 Erasmus+ Exchange Student @ Vilnius University (2026)
